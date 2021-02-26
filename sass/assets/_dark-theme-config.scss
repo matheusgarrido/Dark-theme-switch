@@ -1,0 +1,24 @@
+@import '_colors';
+@import '_function';
+
+@mixin changeTheme($updateBgColor) {
+  @if (checkDarkTheme($updateBgColor) == true) {
+    background-color: $bgColor;
+    h1 {
+      color: $titleColor;
+    }
+    p,
+    a {
+      color: $textColor;
+    }
+  } @else {
+    background-color: $bgColorDark;
+    h1 {
+      color: $titleColorDark;
+    }
+    p,
+    a {
+      color: $textColorDark;
+    }
+  }
+}

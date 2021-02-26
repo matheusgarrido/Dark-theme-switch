@@ -1,0 +1,11 @@
+@import 'assets/_colors';
+@import 'assets/_dark-theme-config';
+
+body {
+  text-align: center;
+  @include changeTheme(white);
+}
+
+.dark {
+  @include changeTheme(black);
+}

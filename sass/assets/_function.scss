@@ -1,0 +1,6 @@
+@function checkDarkTheme($currentBgColor) {
+  @if lightness($currentBgColor) > 50 {
+    @return true;
+  }
+  @return false;
+}
